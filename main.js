@@ -24,8 +24,6 @@ client.once('ready', () => {
     console.log('Wascoi is klaar voor gebruik!')
 
     membercount(client)  
-    roleClaim(client)
-    firstMessage(client)
 });
 
 
