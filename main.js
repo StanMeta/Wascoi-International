@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const prefix = 'w?';
 
 const fs = require('fs');
-const membercount = require('./membercount')
+const membercount = require('./commands/member-count')
 
 client.commands = new Discord.Collection();
 
