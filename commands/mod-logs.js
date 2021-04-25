@@ -1,5 +1,5 @@
 
-const roles = ['✔️▕▏Verified']
+const roles = ['Verified']
 
 module.exports = (client) => {
   const channelId = '835826767012298772'
@@ -18,7 +18,7 @@ module.exports = (client) => {
 
     if (hasRole) {
       const channel = guild.channels.cache.get(channelId)
-      channel.send(`<@${member.id}> said this:
+      channel.send(`@${member.id} said this:
       
 "${content}"`)
     }
