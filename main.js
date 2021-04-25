@@ -78,4 +78,4 @@ client.on('message', message => {
 
 
 
-bot.login(process.enc.token);
+bot.login(process.env.token);
