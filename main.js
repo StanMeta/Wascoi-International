@@ -6,7 +6,6 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
-const roleClaim = require('./commands/role-claim')
 
 client.commands = new Discord.Collection();
 
