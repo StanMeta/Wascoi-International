@@ -7,8 +7,6 @@ const prefix = 'w?';
 const fs = require('fs');
 const membercount = require('./commands/member-count')
 
-const modLogs = require('./commands/mod-logs')
-
 client.commands = new Discord.Collection();
 
 
@@ -73,7 +71,6 @@ client.on('message', message => {
         client.commands.get('ticket').execute(message, args, Discord);
     }
 
-    modLogs(client)
     membercount(client)
     
 });
