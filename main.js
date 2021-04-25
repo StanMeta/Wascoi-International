@@ -78,4 +78,4 @@ client.on('message', message => {
 
 
 
-client.login(config.key);
+bot.login(config.key);
