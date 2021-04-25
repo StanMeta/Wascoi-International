@@ -1,5 +1,5 @@
 
-const roles = ['Verified']
+const roles = ['835826664663154740']
 
 module.exports = (client) => {
   const channelId = '835826767012298772'
