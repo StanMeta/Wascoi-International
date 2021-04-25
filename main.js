@@ -6,7 +6,7 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
-const CLEAR_MESSAGES = '!clearMessages';
+const CLEAR_MESSAGES = 'clearMessages';
 
 client.commands = new Discord.Collection();
 
