@@ -1,0 +1,14 @@
+{
+  "name": "wascoi",
+  "version": "1.0.0",
+  "description": "This is a bot made for Wascoi INTL airport (Discord server)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stan.Meta",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
