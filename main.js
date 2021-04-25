@@ -78,4 +78,4 @@ client.on('message', message => {
 
 
 
-client.login(config.key);
+client.login(process.env.key);
