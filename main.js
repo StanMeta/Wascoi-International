@@ -6,7 +6,7 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
-const firstMessage = require('./commands/first-message')
+const firstMessage = require('./first-message')
 
 client.commands = new Discord.Collection();
 
