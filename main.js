@@ -6,6 +6,7 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
+const roleClaim = require('./commands/role-claim')
 
 client.commands = new Discord.Collection();
 
@@ -23,7 +24,8 @@ client.once('ready', () => {
     console.log('Wascoi is klaar voor gebruik!')
 
     membercount(client)  
-
+    roleClaim(client)
+    firstMessage(client)
 });
 
 
