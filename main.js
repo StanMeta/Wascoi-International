@@ -6,7 +6,6 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
-const firstMessage = require('./first-message')
 
 client.commands = new Discord.Collection();
 
@@ -24,7 +23,6 @@ client.once('ready', () => {
     console.log('Wascoi is klaar voor gebruik!')
 
     membercount(client)
-    firstMessage(client, '835826676273381396', 'hello world', ['✅'])  
 });
 
 
