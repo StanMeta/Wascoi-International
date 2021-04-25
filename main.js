@@ -5,8 +5,10 @@ const client = new Discord.Client();
 const prefix = 'w?';
 
 const fs = require('fs');
+const membercount = require('./commands/membercount')
 
 client.commands = new Discord.Collection();
+
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -19,6 +21,8 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Wascoi is klaar voor gebruik!')
+
+    membercount(client)
 });
 
 
