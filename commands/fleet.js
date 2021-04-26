@@ -8,7 +8,7 @@ module.exports = {
             .setTitle('Fleet')
             .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
             .addField('Info', 'Welcome to #fleet, all the airplanes we have will be publushed in this channel')
-            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png')
+            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836258449335255140/unknown.png')
             .setColor(0x2c2f33)
             .setTimestamp()
             .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');

@@ -7,7 +7,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .addField('Announcements','Any announcements regarding Wascoi International will be announced here.')
         .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
-        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835572958755815454/unknown.png')
+        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836258314609623070/unknown.png')
         .setColor(0x2c2f33)
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');

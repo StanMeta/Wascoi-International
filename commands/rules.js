@@ -24,7 +24,7 @@ module.exports = {
             .addField('15', 'Always follow derections of staff!.')
             .addField('17', 'Do not DM staff members unless they DMed you first!')
             .addField('18', 'Follow the Discord Terms of Service. ')
-            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png');
+            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836258928739221564/unknown.png');
     
             message.channel.send(newEmbed);
         } else {

@@ -8,7 +8,7 @@ module.exports = {
         .setTitle('flights')
         .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
         .addField('Info', 'Welcome to #flights If you see this message it means there are no active or upcoming flights! Flights are deleted after completion')
-        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png')
+        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836259813566316595/unknown.png')
         .setColor(0x2c2f33)
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');

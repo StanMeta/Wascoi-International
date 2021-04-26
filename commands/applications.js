@@ -12,7 +12,7 @@ module.exports = {
             .addField('security applications', 'https://docs.google.com/forms/d/e/1FAIpQLSd8XowsHhWBICC_YkvVnHUPaV1DIt1HgeSfbtIRGs0eRfSgGg/viewform?usp=sf_link')
             .addField('Airport employee and Cabin Crew applications', 'https://docs.google.com/forms/d/e/1FAIpQLScgVyHf-ec0Na2tKh5H-w--KLcmxwXqKnles_mg2eXp38E6cA/viewform?usp=sf_link')
             .addField('First Officer applications', 'https://docs.google.com/forms/d/e/1FAIpQLSejbLxz8jL39uIubnKpI407RGxlEbJmbx-HBtwn2DVhc6JlKQ/viewform')
-            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png')
+            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836258627453976666/unknown.png')
             .setColor(0x2c2f33)
             .setTimestamp()
             .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');

@@ -13,7 +13,7 @@ module.exports = {
         .addField('Partner || ZEROtech', 'https://discord.gg/7rmYG6rexm')
         .addField('Partner || Diamond Hotels', 'https://discord.gg/yNRZTKqEeR')
         .addField('Partner || Monaco Industries', 'https://discord.gg/ZXhayNcm9f')
-        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png')
+        .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836259401400188928/unknown.png')
         .setColor(0x2c2f33)
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');

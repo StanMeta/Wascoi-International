@@ -10,7 +10,7 @@ module.exports = {
             .addField('1', 'Do not make a lot of tickets.')
             .addField('2', 'Do not tagg staff in tickets.')
             .addField('3', 'Only make tickets when needed.')
-            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/835579141876744243/unknown.png')
+            .setImage('https://cdn.discordapp.com/attachments/697085154757312603/836258928739221564/unknown.png')
             .setColor(0x2c2f33)
             .setTimestamp()
             .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');
