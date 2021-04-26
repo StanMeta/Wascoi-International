@@ -35,7 +35,7 @@ module.exports = {
       collector.on("collect", (reaction, user) => {
         switch (reaction.emoji.name) {
           case "🔒":
-            channel.updateOverwrite(message.author, { SEND_MESSAGES: false });
+            channel.updateOverwrite(message.author, { VIEW_CHANNEL: false });
             break;
           case "⛔":
             channel.send("Deleting this channel in 5 seconds!");
