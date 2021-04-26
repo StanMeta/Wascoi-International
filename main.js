@@ -71,6 +71,10 @@ client.on('message', message => {
         client.commands.get('ticket').execute(message, args, Discord);
     }
 
+    if(command === 'development'){
+        client.commands.get('development').execute(message, args, Discord);
+    }
+
     membercount(client)
     
 });
