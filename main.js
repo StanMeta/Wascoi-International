@@ -75,6 +75,10 @@ client.on('message', message => {
         client.commands.get('development').execute(message, args, Discord);
     }
 
+    if(command === 'information'){
+        client.commands.get('information').execute(message, args, Discord);
+    }
+
     if(command === 'events'){
         client.commands.get('events').execute(message, args, Discord);
     }
