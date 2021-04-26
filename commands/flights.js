@@ -12,7 +12,6 @@ module.exports = {
         .setColor(0x2c2f33)
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png');
-
         message.channel.send(newEmbed);
 
     } else {
