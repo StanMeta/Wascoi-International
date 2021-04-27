@@ -25,21 +25,6 @@ client.once('ready', () => {
 });
 
 
-const manager = new ReactionRoleManager(client, {
-    storage: "./reaction-role.json"
-});
-client.reactionRoleManager = manager;
-client.reactionRoleManager.create({
-    messageID: '836579975103643648',
-    channel: message.channel,
-    reaction: '✅',
-    role: message.guild.roles.cache.get('835826664663154740')
-})
-client.reactionRoleManager.delete({
-    messageID: "836579975103643648",
-    reaction: "✅",
-});
-
 
 
 
