@@ -99,7 +99,16 @@ client.on('message', message => {
 });
 
 
-
+client.on("ready", () =>{
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "Bakkie koffie aan het zetten.",  //The message shown
+            type: "Mensen in Wascoi aan het helpen!" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+});
 
 
 
