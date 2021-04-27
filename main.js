@@ -87,23 +87,7 @@ client.on('message', message => {
     
 });
 
-client.on('messageDelete', message => {
-    const CHANNEL = 'mod-logs';
-    if (message.channel.type == 'text') {
-      var logger = message.guild.channels.find(
-        channel => channel.name === CHANNEL
-      );
-      if (logger) {
-        const embed = new Discord.RichEmbed()
-          .setTitle('Message Deleted')
-          .addField('Author', message.author.username)
-          .addField('Message', message.cleanContent)
-          .setThumbnail(message.author.avatarURL)
-          .setColor('0x00AAFF');
-        logger.send({ embed });
-      }
-    }
-  });
+
 
 
 
