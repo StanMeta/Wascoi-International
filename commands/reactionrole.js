@@ -3,10 +3,10 @@ module.exports = {
     description: 'Command made by Wascoi',
     async execute(message, args, Discord, client) {
 
-        if(message.member.roles.cache.has('835827958421389312')){
+        if(message.member.permissions.has("ADMINISTRATOR")){
 
-        const channel = '835826676273381396';
-        const verifyrole = message.guild.roles.cache.find(role => role.name === "Verified");
+        const channel = '836665380935172176';
+        const verifyrole = message.guild.roles.cache.find(role => role.name === "✔️▕▏Verified");
 
         const verifyemoji = '✅';
 

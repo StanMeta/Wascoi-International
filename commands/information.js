@@ -3,7 +3,7 @@ module.exports = {
     description: 'Command made by wascoi',
     execute(message, args, Discord) {
 
-    if(message.member.roles.cache.has('835827958421389312')){
+    if(message.member.permissions.has("ADMINISTRATOR")){
         const newEmbed = new Discord.MessageEmbed()
         .setTitle('Information')
         .addField('Info','Welcome to Wascoi International! This is a Fictional Roblox airline that you can fly on! We try to be a realistic as possible. All for the best Customer Experience!.')

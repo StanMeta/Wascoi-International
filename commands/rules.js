@@ -3,7 +3,7 @@ module.exports = {
     description: 'Command made by wascoi',
     execute(message, args, Discord) {
 
-        if(message.member.roles.cache.has('835827958421389312')){
+        if(message.member.permissions.has("ADMINISTRATOR")){
             const newEmbed = new Discord.MessageEmbed()
             .setTitle('Rules')
             .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
