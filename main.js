@@ -24,7 +24,7 @@ client.once('ready', () => {
 
 });
 
-const ReactionRoleManager = require("discord-reaction-role");
+
 const manager = new ReactionRoleManager(client, {
     storage: "./reaction-role.json"
 });
@@ -38,7 +38,7 @@ client.reactionRoleManager.create({
 client.reactionRoleManager.delete({
     messageID: "836579975103643648",
     reaction: "✅",
-  });
+});
 
 
 
