@@ -2,6 +2,9 @@ module.exports = {
     name: 'reactionrole',
     description: 'Command made by Wascoi',
     async execute(message, args, Discord, client) {
+
+        if(message.member.roles.cache.has('835827958421389312')){
+
         const channel = '835826676273381396';
         const verifyrole = message.guild.roles.cache.find(role => role.name === "Verified");
 
@@ -48,6 +51,10 @@ module.exports = {
                 return;
             }
         });
+
+    }else {
+        message.channel.send('You do not have the right permissions to use this command.')
+    }
     }
 
 }
