@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord) {
 
     if(message.member.roles.cache.has('835827958421389312')){
-        
+
         if (command === 'ban') {
             if (args.length < 2) {
                 return message.reply('Please mention the user you want to ban and specify a ban reason.');
@@ -17,7 +17,6 @@ module.exports = {
         
             const reason = args.slice(1).join(' ');
             try {
-                await message.guild.members.ban(user, { reason });
             } catch (error) {
                 return message.channel.send(`Failed to ban **${user.tag}**: ${error}`);
             }
