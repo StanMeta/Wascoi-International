@@ -84,6 +84,7 @@ client.on('message', message => {
     }
 
     membercount(client)
+    channelCreate(client)
     
 });
 
