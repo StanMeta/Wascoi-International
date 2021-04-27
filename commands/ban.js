@@ -13,7 +13,9 @@ module.exports = {
         }else{
             message.channel.send('I was not able to ban.');
         }
-    }else {message.channel.send(`You are not allowed to BAN people from the Wascoi discord <@${member.id}>`)} 
+    } else {
+        message.channel.send(`You are not allowed to BAN people from the Wascoi discord <@${member.id}>`)
+    } 
 
     }
 }
