@@ -96,10 +96,30 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-	if (message.content === 'verify') {
-		message.react('✅');
-	} 
-});
+	if (message.content === 'w?verify') {
+		message.react('✅'); 
+
+	}  if (reaction.partial) { //this whole section just checks if the reaction is partial
+        try {
+            await reaction.fetch(); //fetches reaction because not every reaction is stored in the cache
+        } catch (error) {
+            console.error('Fetching message failed: ', error);
+            return;
+        }
+    } if (!user.bot) {
+        if (reaction.emoji.id == 836584213142569002) { //if the user reacted with the right emoji
+
+            const role = reaction.message.guild.roles.cache.find(r => r.id === 835826664663154740); //finds role you want to assign (you could also user .name instead of .id)
+
+            const { guild } = reaction.message //store the guild of the reaction in variable
+
+            const member = guild.members.cache.find(member => member.id === user.id); //find the member who reacted (because user and member are seperate things)
+
+            member.roles.add(role); //assign selected role to member
+
+        }
+    }
+})
 
 
 
