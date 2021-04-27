@@ -2,6 +2,9 @@ module.exports = {
     name: 'kick',
     description : 'Command made by wascoi',
     execute(message, args){
+
+        if(message.member.permissions.has("KICK_MEMBERS")){
+            
         const member = message.mentions.users.first();
         if(member){
             const memberTarget = message.guild.members.cache.get(member.id);
@@ -10,5 +13,6 @@ module.exports = {
         }else{
             message.channel.send('I was not able to kick.');
         }
+    }
     }
 }
