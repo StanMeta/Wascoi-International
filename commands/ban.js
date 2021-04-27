@@ -9,9 +9,9 @@ module.exports = {
         if(member){
             const memberTarget = message.guild.members.cache.get(member.id);
             memberTarget.ban();
-            message.channel.send('User has been banned from the Wascoi International');
+            message.channel.send('User has been banned from the Wascoi International.');
         }else{
-            message.channel.send('I was not able to ban.');
+            message.channel.send('You need to specify an person you want to ban.');
         }
     } else {
         message.channel.send('You are not allowed to BAN people from the Wascoi discord.')
