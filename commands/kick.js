@@ -13,6 +13,7 @@ module.exports = {
         }else{
             message.channel.send('I was not able to kick.');
         }
-    }
+    }else{message.channel.send(`You are not allowed to KICK people from the Wascoi discord <@${member.id}>`)}
+
     }
 }
