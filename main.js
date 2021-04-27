@@ -83,6 +83,10 @@ client.on('message', message => {
         client.commands.get('events').execute(message, args, Discord);
     }
 
+    if(command === 'kick'){
+        client.commands.get('kick').execute(message, args, Discord);
+    }
+
 
     membercount(client)
     
