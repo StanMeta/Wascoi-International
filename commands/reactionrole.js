@@ -8,7 +8,7 @@ module.exports = {
         const verifyemoji = '✅';
 
         let embed = new Discord.MessageEmbed()
-        .setColor(0x2c2f33)
+        .setColor('0x2c2f33')
         .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
         .setTitle('Verify')
         .setTimestamp()
