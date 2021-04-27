@@ -5,7 +5,7 @@ module.exports = {
         const channel = '835826676273381396';
         const verifyrole = message.guild.roles.cache.find(role => role.name === "Verified");
 
-        const verifyrole = '✅';
+        const verifyemoji = '✅';
 
         let embed = new Discord.MessageEmbed()
         .setcolor(0x2c2f33)
