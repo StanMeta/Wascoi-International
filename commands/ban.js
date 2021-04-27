@@ -3,30 +3,63 @@ module.exports = {
     description: 'Command made by wascoi',
     execute(message, args, Discord) {
 
-    if(message.member.roles.cache.has('835827958421389312')){
-
-        if (command === 'ban') {
-            if (args.length < 2) {
-                return message.reply('Please mention the user you want to ban and specify a ban reason.');
+        if (msg.content.startsWith("kick ")) {
+            if (msg.member.hasPermission("KICK_MEMBERS")) {
+                if (msg.members.mentions.first()) {
+                    try {
+                        msg.members.mentions.first().kick();
+                    } catch {
+                        msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+                    }
+                } else {
+                    msg.reply("You do not have permissions to kick " + msg.members.mentions.first());
             }
-        
-            const user = getUserFromMention(args[0]);
-            if (!user) {
-                return message.reply('Please use a proper mention if you want to ban someone.');
-            }
-        
-            const reason = args.slice(1).join(' ');
-            try {
-            } catch (error) {
-                return message.channel.send(`Failed to ban **${user.tag}**: ${error}`);
-            }
-        
-            return message.channel.send(`Successfully banned **${user.tag}** from the server!`);
         }
-
-    } else {
-        message.channel.send('You do not have the right permissions to use this command.')
-    }
+            
+        }else if (msg.content.startsWith("ban ")) {
+            if (msg.member.hasPermission("BAN_MEMBERS")) {
+                if (msg.members.mentions.first()) {
+                    try {
+                        msg.members.mentions.first().ban();
+                    } catch {
+                        msg.reply("I do not have permissions to ban" + msg.members.mentions.first());
+                    }
+                } else {
+                    msg.reply("You do not have permissions to ban" + msg.members.mentions.first());
+                }
+            }
+        }
 
     }
 }
+
+
+
+
+
+// if (msg.content.startsWith("kick ")) {
+//     if (msg.member.hasPermission("KICK_MEMBERS")) {
+//         if (msg.members.mentions.first()) {
+//             try {
+//                 msg.members.mentions.first().kick();
+//             } catch {
+//                 msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+//             }
+//         } else {
+//             msg.reply("You do not have permissions to kick " + msg.members.mentions.first());
+//     }
+// }
+    
+// }else if (msg.content.startsWith("ban ")) {
+//     if (msg.member.hasPermission("BAN_MEMBERS")) {
+//         if (msg.members.mentions.first()) {
+//             try {
+//                 msg.members.mentions.first().ban();
+//             } catch {
+//                 msg.reply("I do not have permissions to ban" + msg.members.mentions.first());
+//             }
+//         } else {
+//             msg.reply("You do not have permissions to ban" + msg.members.mentions.first());
+//         }
+//     }
+// }
