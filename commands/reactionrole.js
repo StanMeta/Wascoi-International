@@ -13,8 +13,8 @@ module.exports = {
         .setTitle('Verify')
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
-        .setDescription('To see all the channels you need to react with the emoji under this message.\n\n')
-        + `${verifyemoji} To verify`;
+        .addField('Info', 'To get the verified role you will need to react with the emoji under this message.\n\n'
+        + `${verifyemoji} To verify`);
 
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(verifyemoji);
