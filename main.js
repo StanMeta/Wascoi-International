@@ -83,10 +83,6 @@ client.on('message', message => {
         client.commands.get('events').execute(message, args, Discord);
     }
 
-    if(command === 'ban'){
-        client.commands.get('ban').execute(message, args, Discord);
-    }
-
 
     membercount(client)
     
