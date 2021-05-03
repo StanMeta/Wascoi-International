@@ -7,22 +7,26 @@ module.exports = {
 
         const channel = '836665380935172176';
         const verifyrole = message.guild.roles.cache.find(role => role.name === "Verified");
-        const verifyrole = message.guild.roles.cache.find(role => role.name === "Traveler");
-        const verifyrole = message.guild.roles.cache.find(role => role.name === "- - - - - General - - - - -");
+        const travelerrole = message.guild.roles.cache.find(role => role.name === "Traveler");
+        const generalrole = message.guild.roles.cache.find(role => role.name === "- - - - - General - - - - -");
 
         const verifyemoji = '✅';
+        const traveleremoji = '🛅';
+        const generalemoji = '🈴';
 
         let embed = new Discord.MessageEmbed()
         .setColor('0x2c2f33')
         .setThumbnail('https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
-        .setTitle('Verify')
+        .setTitle('Roles')
         .setTimestamp()
         .setFooter('Wascoi ✔2021', 'https://cdn.discordapp.com/attachments/697085154757312603/835573595421540433/Wascoi_logo_1-removebg-preview.png')
-        .addField('Info', 'To get the verified role you will need to react with the emoji under this message.\n\n'
-        + `${verifyemoji} To verify`);
+        .addField('Info', 'To get the all the roles you will need to react with the emoji\'s under this message.\n\n'
+        + `${verifyemoji} To verify - ${traveleremoji} to get trevaler role ${generalemoji} to get general role`);
 
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(verifyemoji);
+        messageEmbed.react(traveleremoji);
+        messageEmbed.react(generalemoji);
 
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
