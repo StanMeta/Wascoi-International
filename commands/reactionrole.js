@@ -7,6 +7,8 @@ module.exports = {
 
         const channel = '836665380935172176';
         const verifyrole = message.guild.roles.cache.find(role => role.name === "Verified");
+        const verifyrole = message.guild.roles.cache.find(role => role.name === "Traveler");
+        const verifyrole = message.guild.roles.cache.find(role => role.name === "- - - - - General - - - - -");
 
         const verifyemoji = '✅';
 
