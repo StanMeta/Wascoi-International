@@ -101,11 +101,18 @@ client.on('message', message => {
 
 client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '- - - - - General - - - - -');
+
+    guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('836665104795828244').send(`Welcome <@${guildMember.user.id}> To wascoi International airport!, we hope you have a lot of fun playing!`)
+});
+
+client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Traveler');
 
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('836665104795828244').send(`Welcome <@${guildMember.user.id}> To wascoi International airport!, we hope you have a lot of fun playing!`)
 });
+
 
 
 
