@@ -6,7 +6,7 @@ module.exports = {
         if(message.member.permissions.has("ADMINISTRATOR")){
 
         const channel = '836665380935172176';
-        const verifyrole = message.guild.roles.cache.find(role => role.id === "WCI | Economy Class");
+        const verifyrole = message.guild.roles.cache.find(role => role.name === "WCI | Economy Class");
 
         const verifyemoji = '✅';
 
@@ -21,8 +21,6 @@ module.exports = {
 
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(verifyemoji);
-        messageEmbed.react(traveleremoji);
-        messageEmbed.react(generalemoji);
 
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
