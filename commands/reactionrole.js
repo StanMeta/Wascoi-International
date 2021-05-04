@@ -6,7 +6,7 @@ module.exports = {
         if(message.member.permissions.has("ADMINISTRATOR")){
 
         const channel = '836665380935172176';
-        const verifyrole = message.guild.roles.cache.find(role => role.id === "681481559731470351");
+        const verifyrole = message.guild.roles.cache.find(role => role.id === "WCI | Economy Class");
 
         const verifyemoji = '✅';
 
