@@ -6,7 +6,7 @@ module.exports = {
         if(message.member.permissions.has("ADMINISTRATOR")){
 
         const channel = '836665380935172176';
-        const verifyrole = message.guild.roles.cache.find(role => role.name === "WCI | Economy Class");
+        const verifyrole = message.guild.roles.cache.find(role => role.id === "681481559731470351");
 
         const verifyemoji = '✅';
 
@@ -47,7 +47,7 @@ module.exports = {
 
             if (reaction.message.channel.id == channel) {
                 if (reaction.emoji.name === verifyemoji) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(verifyrole, travelerrole, generalrole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(verifyrole);
                 }
             } else {
                 return;
