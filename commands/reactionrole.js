@@ -37,6 +37,10 @@ module.exports = {
             if (reaction.message.channel.id == channel) {
                 if (reaction.emoji.name === verifyemoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(verifyrole);
+                }if (reaction.emoji.name === traveleremoji) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(travelerrole);
+                }if (reaction.emoji.name === generalemoji) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(generalrole);
                 }
             } else {
                 return;
