@@ -6,7 +6,6 @@ const prefix = 'w?';
 
 const fs = require('fs');
 const membercount = require('./commands/member-count')
-const welcome = require('./commands/welcome')
 
 client.commands = new Discord.Collection();
 
@@ -96,7 +95,6 @@ client.on('message', message => {
 
 
     membercount(client)
-    welcome(client)
     
 });
 
