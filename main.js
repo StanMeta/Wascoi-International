@@ -5,8 +5,7 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]
 const prefix = 'w?';
 
 const fs = require('fs');
-const membercount = require('./commands/member-count');
-const welcome = require("./commands/welcome");
+const membercount = require('./commands/member-count')
 
 client.commands = new Discord.Collection();
 
@@ -96,7 +95,6 @@ client.on('message', message => {
 
 
     membercount(client)
-    welcome(client)
     
 });
 
